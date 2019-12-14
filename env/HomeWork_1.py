@@ -49,7 +49,7 @@ def avg_metrics():
     return f'Average height: {avg_h} and average weight {avg_w}'
 
 
-@app.route('/astro_online')
+@app.route('/astronauts_online')
 def get_cosmo_online():
     res = requests.get('http://api.open-notify.org/astros.json')
     json_ = res.json()
